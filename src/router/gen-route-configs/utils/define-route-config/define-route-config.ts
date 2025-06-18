@@ -19,7 +19,7 @@ function defineRouteConfig(
     (acc, asyncComponentFs, filePath) => {
       if (_isFunction(asyncComponentFs)) {
         acc.component = asyncComponentFs;
-        acc.name = viewDir;
+        acc.name = `/${viewDir}`;
         acc.path = `/${viewDir}`;
         acc.props = (route) => ({ ...route.params });
       } else if (_isObject(asyncComponentFs)) {

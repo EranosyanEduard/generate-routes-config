@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <header>
-      <h1>routes config example</h1>
       <nav>
         <router-link :to="{ name: '/home' }">home</router-link>
         <router-link :to="{ name: '/settings' }">settings</router-link>
