@@ -5,7 +5,7 @@
         <router-link :to="{ name: 'home' }">home</router-link>
         <router-link :to="{ name: 'settings' }">settings</router-link>
         <router-link
-          :to="{ name: 'settings-settingId', params: { settingId: 27 } }"
+          :to="{ name: 'settings-settingId', params: { settingId: 'a' } }"
           >settingsId</router-link
         >
         <router-link
