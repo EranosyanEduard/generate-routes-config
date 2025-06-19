@@ -7,7 +7,7 @@ import _reduce from "lodash-es/reduce";
 import type { DeepReadonly } from "vue";
 import type { RouteConfig } from "vue-router";
 import type { RouteConfigSingleView } from "vue-router/types/router";
-import zod, { z } from "zod";
+import zod from "zod";
 import type { AsyncComponentsFs } from "../../typedef";
 
 function defineRouteConfig(

@@ -29,8 +29,8 @@ function genRouteConfigs(
     defineRouteConfigs(createViewsVirtualFs(arrOfAsyncComponents))
   );
   return routeConfigs.map((routeConfig) => {
-    routeConfig.name = processRouteName(routeConfig.name!);
-    routeConfig.path = processRoutePath(routeConfig.path);
+    routeConfig.name = processRouteName(routeConfig.name!.replace(/\/_/g, "/"));
+    routeConfig.path = processRoutePath(routeConfig.path.replace(/\/_/g, "/:"));
     return routeConfig;
   });
 }
