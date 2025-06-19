@@ -1,7 +1,11 @@
 <template>
-  <div><span>Admin</span><span>Home</span></div>
+  <div><span>Admin</span><span>Home</span><Aaa /></div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-export default defineComponent({});
+import A from "./A.vue";
+export default defineComponent({
+  name: "Home",
+  components: { Aaa: A },
+});
 </script>
